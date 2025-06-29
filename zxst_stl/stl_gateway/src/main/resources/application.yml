@@ -1,0 +1,44 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: GATEWAYSERVICE
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 1234
+
+  cloud:
+    gateway:
+      routes:
+        - id: MEMEBER
+          uri: lb://MEMBERSERVICE
+          predicates:
+            - Path=/admin/**,/member/**,/coach/**
+          filters:
+            - name: RequestRateLimiter #gateway提供限流内部工具类名称
+              args:
+                key-resolver: "#{@ipkeyResolver}"
+                redis-rate-limiter.replenishRate: 10  #每秒填充令牌数量
+                redis-rate-limiter.burstCapacity: 1000  #令牌桶的最大容量
+
+        - id: RESERVE
+          uri: lb://RESERVESERVICE
+          predicates:
+            - Path=/reserve/**
+
+        - id: UTIL
+          uri: lb://UTILSERVICE
+          predicates:
+            - Path=/captcha/**,/charts/**,/file/**
+
+        - id: COURSE
+          uri: lb://COURSESERIVE
+          predicates:
+            - Path=/course/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka

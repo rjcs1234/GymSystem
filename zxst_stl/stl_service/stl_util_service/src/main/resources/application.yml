@@ -1,0 +1,39 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: UTILSERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/stl
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 1234
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    format:
+      date: YYYY-MM-dd
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+alinfo:
+  oss-endpoint: oss-cn-qingdao.aliyuncs.com
+  oss-accesskeyid: LTAI5tN9PjbkuELFhv1S6gex
+  oss-accesskeysecret: uVYWQBjxTNBOWKFaRWDakm6zpqgziH
+  oss-bucketname: zxst-shop-liang

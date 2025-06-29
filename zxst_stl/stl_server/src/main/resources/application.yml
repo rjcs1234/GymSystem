@@ -1,0 +1,15 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: stl_server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    register-with-eureka: false #关闭发布当前工程在eureka中注册
+    fetch-registry: false #不会拉取其他服务从其他的注册中心
+  server:
+    eviction-interval-timer-in-ms: 2000
+    enable-self-preservation: false  #关闭自我保护机制
+

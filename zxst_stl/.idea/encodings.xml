@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_commo_db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_commo_db/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/stl_course_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/stl_member_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/stl_member_service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/stl_reserve_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service/stl_util_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/stl_course_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/stl_member_service_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/stl_member_service_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/stl_reserve_service_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stl_service_api/stl_util_service_api/src/main/java" charset="UTF-8" />
+  </component>
+</project>
